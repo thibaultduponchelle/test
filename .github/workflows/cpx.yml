@@ -12,3 +12,4 @@ jobs:
         run: curl -sL https://git.io/cpm | sudo perl - install -g App::cpx
       - name: cpx hr 
         run: cpx hr -s 40
+
