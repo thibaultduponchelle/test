@@ -1,0 +1,14 @@
+name : Test cpx
+
+on:
+  push
+
+jobs:
+  cpx:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install cpx
+        run: curl -sL https://git.io/cpm | perl - install App::cpx
+      - name: cpx hr 
+        run: cpx hr -s 40
