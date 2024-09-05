@@ -1,8 +1,5 @@
 name : Test cpx
-
-on:
-  push
-
+on: push
 jobs:
   cpx:
     runs-on: ubuntu-latest
@@ -12,5 +9,3 @@ jobs:
         run: curl -sL https://git.io/cpm | sudo perl - install -g App::cpx@0.03
       - name: cpx hr 
         run: cpx hr -s 40
-
-
